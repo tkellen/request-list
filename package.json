@@ -1,0 +1,31 @@
+{
+  "name": "request-list",
+  "version": "0.1.0",
+  "description": "List all requests made upon loading a website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "bin": {
+    "request-list": "bin/request-list"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tkellen/request-list.git"
+  },
+  "author": "Tyler Kellen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tkellen/request-list/issues"
+  },
+  "homepage": "https://github.com/tkellen/request-list#readme",
+  "dependencies": {
+    "leaked-handles": "^5.2.0",
+    "puppeteer": "^1.9.0"
+  },
+  "devDependencies": {
+    "nexe": "^2.0.0-rc.34",
+    "tape": "^4.9.1",
+    "test-listen": "^1.1.0"
+  }
+}
