@@ -4,7 +4,10 @@ function requestList (url) {
   if (!url) {
     throw new Error('Url must be specified.')
   }
-  return puppeteer.launch().then(async browser => {
+  return puppeteer.launch({args: [
+    '--no-sandbox',
+    '--disable-setuid-sandbox'
+  ]}).then(async browser => {
     let requests = []
     const page = await browser.newPage()
     await page.setRequestInterception(true)
